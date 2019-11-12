@@ -3,6 +3,7 @@ package com.epicdelia.coderswag
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.epicdelia.coderswag.Adapters.CategoryAdapter
 import com.epicdelia.coderswag.Models.Categories
 import com.epicdelia.coderswag.Services.DataService
@@ -18,5 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         adapter = CategoryAdapter(this, DataService.Categories)
         categoryListview.adapter = adapter
+
+
     }
 }
